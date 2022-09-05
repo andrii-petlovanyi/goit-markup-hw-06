@@ -580,8 +580,14 @@ body {
   background: none;
   border: 1px solid rgba(255, 255, 255, 0.3);
   color: rgba(255, 255, 255, 0.6);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+
+  transition: border 250ms var(--timing-buzier);
+}
+
+.email-subs:focus {
+  border: 1px solid var(--accent-text-color);
+  outline: none;
 }
 
 .footer-subscribe .icon-send {
@@ -922,6 +928,7 @@ body {
 .modal .comment:focus {
   border: 1px solid var(--accent-text-color);
   border-radius: 4px;
+  outline: none;
 }
 
 .form-icon {
